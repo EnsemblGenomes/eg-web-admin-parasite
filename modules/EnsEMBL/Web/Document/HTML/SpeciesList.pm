@@ -11,8 +11,8 @@ sub render {
   my $healthchecks = $species_defs->databases->{'DATABASE_HEALTHCHECK'};
   my $html;
   
-  # EG
-  my $staging_site = 'http://test.' . $species_defs->GENOMIC_UNIT . '.ensembl.org';
+  # ParaSite
+  my $staging_site = 'http://test.parasite.wormbase.org';
 
   if ($healthchecks) {
     $html = qq(
