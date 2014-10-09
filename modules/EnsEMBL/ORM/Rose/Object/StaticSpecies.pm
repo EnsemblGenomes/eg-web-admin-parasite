@@ -18,11 +18,11 @@ __PACKAGE__->meta->setup(
 
   columns       => [
     species_name => {type => 'varchar', 'length' => 50, primary_key => 1, not_null => 1},
-    display_name => {type => 'varchar', 'length' => 50, primary_key => 1, not_null => 1},
+    display_name => {type => 'varchar', 'length' => 50, not_null => 1},
     description  => {type => 'text'},
   ],
 
-  title_column  => 'display_name',
+  title_column  => 'species_name',
 
   unique_key    => ['species_name'],
 
