@@ -21,10 +21,6 @@ sub show_fields {
       'type'      => 'string',
       'label'     => 'Species Name'
     },
-    display_name  => {
-      'type'      => 'string',
-      'label'     => 'Display Label'
-    },
     description    => {
       'type'      => 'text',
       'label'     => 'Description'
@@ -36,7 +32,6 @@ sub show_columns {
   ## @overrides
   return [
     species_name  => 'Species Name',
-    display_name  => 'Display Label',
     description   => 'Description'
   ];
 }
