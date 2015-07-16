@@ -39,7 +39,7 @@ sub show_fields {
     },
     publication   => {
       'type'      => 'text',
-      'label'     => 'Publications',
+      'label'     => 'Publications  (PubMed IDs only; multiple entries separated by semi-colon)',
     }
   ];
 }
