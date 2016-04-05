@@ -17,6 +17,7 @@ __PACKAGE__->meta->setup(
   table         => 'static_genome',
 
   columns       => [
+    static_genome_id => {type => 'serial', primary_key => 1, not_null => 1},
     species_name => {type => 'varchar', 'length' => 50, primary_key => 1, not_null => 1},
     summary      => {type => 'text'},
     assembly     => {type => 'text'},

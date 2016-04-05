@@ -17,6 +17,7 @@ __PACKAGE__->meta->setup(
   table         => 'static_species',
 
   columns       => [
+    static_species_id => {type => 'serial', primary_key => 1, not_null => 1},
     species_name => {type => 'varchar', 'length' => 50, primary_key => 1, not_null => 1},
     description  => {type => 'text'},
   ],
